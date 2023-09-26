@@ -41,8 +41,8 @@
       };
     },
     methods: {
-      addToDo() {
-        console.log("To-do added");
+      addToDo(toDoLabel) {
+         this.ToDoItems.push({id:uniqueId('todo-'), label: toDoLabel, done: false});
       },
     },
   };
