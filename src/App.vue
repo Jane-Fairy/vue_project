@@ -11,6 +11,12 @@
       </li>
     </ul>
   </div>
+
+  <br>
+
+  <css-component></css-component> <br>
+  <personal-index></personal-index>
+
 </template>
 
 
@@ -18,6 +24,11 @@
 
   import ToDoItem from "./components/ToDoItem.vue";
   import ToDoForm from "./components/ToDoForm.vue";
+  import CssComponent from "./components/CssComponent.vue"
+  import PersonalIndex from "./components/PersonalIndex.vue";
+
+
+
   import uniqueId from "lodash.uniqueid";
 
   export default {
@@ -25,6 +36,8 @@
     components: {
       ToDoItem,
       ToDoForm,
+      CssComponent,
+      PersonalIndex,
     },
     data() {
       return {
